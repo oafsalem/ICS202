@@ -34,4 +34,8 @@ public class Stack {
     public String toString() {
         return pool.toString();
     }
+
+    public static void main(String[] args) {
+        Stack s = new Stack();
+    }
 }
