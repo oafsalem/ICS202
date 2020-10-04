@@ -1,34 +1,21 @@
-import java.util.*;
 
 public class StacksTest {
 	public static void main(String[] args) {
-//		Stack s = new Stack();
-//		s.push(new Integer(3));
-//		s.push(new Integer(5));
-//		s.push(new String("hi"));
-//		while(!s.isEmpty()) {
-//			System.out.print(s.pop() + " ");
-//		}
-//
-//		s.clear(); //Empty the contents of the stack
-//
-//		System.out.println("\nHere's how I reverse a string: ");
-//		Scanner k = new Scanner(System.in);
-//		System.out.print("Enter a string> ");
-//		String input = k.nextLine();
-//
-//		for(int i = 0; i < input.length(); i++)
-//			s.push(input.charAt(i) + "");
-//
-//		System.out.println("The reversed string is: ");
-//		while(!s.isEmpty()) {
-//			System.out.print(s.pop());
-//		}
-		
+		// testing for the isPalindrome function
 		System.out.println(isPalindrome("civic"));
 		System.out.println(isPalindrome("madam"));
 		System.out.println(isPalindrome("apple"));
-		
+		//checking reverse
+		Stack s = new Stack();
+		s.push(new Integer(3));
+		s.push(new Integer(5));
+		s.push(new String("hi"));
+		System.out.println(reverse(s));
+		//checking is balanced
+		System.out.println(isBalanced("[3 + (2 –4) + {(a –b)}]"));
+		System.out.println(isBalanced("(){}[][]([])"));
+		System.out.println(isBalanced("[3 + 2("));
+		System.out.println(isBalanced("{ 7 + [ a –b} ]"));
 	}
 
 	public static boolean isPalindrome(String input){
@@ -43,6 +30,7 @@ public class StacksTest {
 	}
 	return isPalindrome;
 	}
+	
 	public static Stack reverse(Stack s){
 		Queue q = new Queue();
 		Stack reversedStack = new Stack();
@@ -53,6 +41,44 @@ public class StacksTest {
 			reversedStack.push(q.dequeue());
 		}
 		return reversedStack;
+	}
+	public static boolean isBalanced(String expression){
+		Stack parentheses = new Stack();
+		for(int i = 0; i < expression.length(); i++){
+		if ( Character.compare(expression.charAt(i), '(') == 0 ||
+		 Character.compare(expression.charAt(i), '[') == 0 ||
+		 Character.compare(expression.charAt(i), '{') == 0 
+		 ){
+		parentheses.push(expression.charAt(i));
+		 }
+		 else if ( Character.compare(expression.charAt(i), ')') == 0 ||
+		 Character.compare(expression.charAt(i), ']') == 0 ||
+		 Character.compare(expression.charAt(i), '}') == 0 
+		 ){
+			if (parentheses.isEmpty()){
+			return false;
+			}else {
+				if (Character.compare(expression.charAt(i), getOppositeParentheses((char) parentheses.pop())) != 0){
+					return false;
+				}
+
+			}
+		 }
+		}
+		if (parentheses.isEmpty())
+			return true;
+		else 
+			return false;
+	}
+	public static char getOppositeParentheses(char x){
+		if (x == '(')
+			return ')';
+		if (x == '[')
+			return ']';
+		if (x == '{')
+			return '}';
+		else
+			return '0';
 	}
 
 }
