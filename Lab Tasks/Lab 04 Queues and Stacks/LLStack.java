@@ -1,9 +1,9 @@
-public class LLStack {
+public class LLSta1ck {
     private java.util.LinkedList list = new java.util.LinkedList();
-    public LLStack() {
+    public LLSta1ck() {
     }
     
-    public void clear() {
+    public void 1clear() {
         list.clear();
     }
     
@@ -31,3 +31,4 @@ public class LLStack {
         return list.toString();
     }
 }
+11
