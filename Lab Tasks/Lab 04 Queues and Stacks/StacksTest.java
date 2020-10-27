@@ -6,7 +6,7 @@ public class StacksTest {
 		System.out.println(isPalindrome("madam"));
 		System.out.println(isPalindrome("apple"));
 		//checking reverse
-		Stack1 s = new Stack1();
+		Stack s = new Stack();
 		s.push(new Integer(3));
 		s.push(new Integer(5));
 		s.push(new String("hi"));
@@ -19,7 +19,7 @@ public class StacksTest {
 	}
 
 	public static boolean isPalindrome(String input){
-	Stack1 s = new Stack1();
+	Stack s = new Stack();
 	boolean isPalindrome = true;
 	for(int i = 0; i < input.length(); i++)
 		s.push(input.charAt(i));
@@ -31,9 +31,9 @@ public class StacksTest {
 	return isPalindrome;
 	}
 	
-	public static Stack1 reverse(Stack1 s){
+	public static Stack reverse(Stack s){
 		Queue q = new Queue();
-		Stack1 reversedStack = new Stack1();
+		Stack reversedStack = new Stack();
 		while(!s.isEmpty()) {
 			q.enqueue(s.pop());
 		}
@@ -43,7 +43,7 @@ public class StacksTest {
 		return reversedStack;
 	}
 	public static boolean isBalanced(String expression){
-		Stack1 parentheses = new Stack1();
+		Stack parentheses = new Stack();
 		for(int i = 0; i < expression.length(); i++){
 		if ( Character.compare(expression.charAt(i), '(') == 0 ||
 		 Character.compare(expression.charAt(i), '[') == 0 ||
