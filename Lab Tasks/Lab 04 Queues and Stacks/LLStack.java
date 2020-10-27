@@ -3,7 +3,7 @@ public class LLSta1ck {
     public LLSta1ck() {
     }
     
-    public void 1clear() {
+    public void clear() {
         list.clear();
     }
     
@@ -31,4 +31,3 @@ public class LLSta1ck {
         return list.toString();
     }
 }
-11
