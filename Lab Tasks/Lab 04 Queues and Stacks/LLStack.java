@@ -1,6 +1,6 @@
-public class LLSta1ck {
+public class LLStack {
     private java.util.LinkedList list = new java.util.LinkedList();
-    public LLSta1ck() {
+    public LLStack() {
     }
     
     public void clear() {
