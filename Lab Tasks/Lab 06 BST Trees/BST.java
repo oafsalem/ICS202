@@ -155,7 +155,7 @@ public class BST<T extends Comparable<? super T>> {
     }
     public void iterativePreorder() {
         BSTNode<T> p = root;
-        Stack1<BSTNode<T>> travStack = new Stack1<BSTNode<T>>();
+        Stack<BSTNode<T>> travStack = new Stack<BSTNode<T>>();
         if (p != null) {
              travStack.push(p);
              while (!travStack.isEmpty()) {
@@ -170,7 +170,7 @@ public class BST<T extends Comparable<? super T>> {
     }
     public void iterativeInorder() {
         BSTNode<T> p = root;
-        Stack1<BSTNode<T>> travStack = new Stack1<BSTNode<T>>();
+        Stack<BSTNode<T>> travStack = new Stack<BSTNode<T>>();
         while (p != null) {
             while(p != null) {               // stack the right child (if any)
                  if (p.right != null)        // and the node itself when going
@@ -191,8 +191,8 @@ public class BST<T extends Comparable<? super T>> {
     }
     public void iterativePostorder2() {
         BSTNode<T> p = root;
-        Stack1<BSTNode<T>> travStack = new Stack1<BSTNode<T>>(),
-                          output = new Stack1<BSTNode<T>>();
+        Stack<BSTNode<T>> travStack = new Stack<BSTNode<T>>(),
+                          output = new Stack<BSTNode<T>>();
         if (p != null) {        // left-to-right postorder = right-to-left preorder;
              travStack.push(p);
              while (!travStack.isEmpty()) {
@@ -211,7 +211,7 @@ public class BST<T extends Comparable<? super T>> {
     }
     public void iterativePostorder() {
         BSTNode<T> p = root, q = root;
-        Stack1<BSTNode<T>> travStack = new Stack1<BSTNode<T>>();
+        Stack<BSTNode<T>> travStack = new Stack<BSTNode<T>>();
         while (p != null) {
             for ( ; p.left != null; p = p.left)
                 travStack.push(p);
@@ -343,7 +343,6 @@ public class BST<T extends Comparable<? super T>> {
           while (!queue.isEmpty()) {
               p = queue.dequeue();
               i++;
-              visit(p);
               if (p.left != null)
                    queue.enqueue(p.left);
               if (p.right != null)
@@ -352,4 +351,69 @@ public class BST<T extends Comparable<? super T>> {
      }
      return i;
     }
+    public boolean isLeaf(BSTNode<T> node){
+         if (node.left == null && node.right ==null)
+               return true;
+         return false;
+    }
+    public int countLeaves(){
+     BSTNode<T> p = root;
+     Queue<BSTNode<T>> queue = new Queue<BSTNode<T>>();
+     int i =0;
+     if (p != null) {
+          queue.enqueue(p);
+          while (!queue.isEmpty()) {
+              p = queue.dequeue();
+              if(isLeaf(p))
+                    i++;
+              if (p.left != null)
+                   queue.enqueue(p.left);
+              if (p.right != null)
+                   queue.enqueue(p.right);
+          }
+     }
+     return i; 
+    }
+    public int isAtLevel(BSTNode<T> node){
+     BSTNode<T> p = root;
+     int i=1;
+     while (p != null)
+         if (node.el.equals(p.el))
+              return i;
+         else if (node.el.compareTo(p.el) < 0){
+              p = p.left;
+              i++;
+         }
+         else{
+               p = p.right;
+               i++;
+         }
+     return -1;
+    }
+    public int height(){
+         if (root == null)
+               return 0;
+               BSTNode<T> p = root;
+               Stack<BSTNode<T>> stack = new Stack<BSTNode<T>>();
+               Queue<BSTNode<T>> queue = new Queue<BSTNode<T>>();
+               
+                    queue.enqueue(p);
+                    while (!queue.isEmpty()) {
+                        p = queue.dequeue();
+                        if(isLeaf(p))
+                              stack.push(p);
+                        if (p.left != null)
+                             queue.enqueue(p.left);
+                        if (p.right != null)
+                             queue.enqueue(p.right);
+    }
+    int max =isAtLevel(stack.pop());
+    while(!stack.isEmpty()){
+         int tmp = isAtLevel(stack.pop());
+         if (tmp > max)
+         max = tmp;
+    }
+    return max;
+}
+
 }
