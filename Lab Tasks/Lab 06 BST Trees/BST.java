@@ -6,7 +6,9 @@ public class BST<T extends Comparable<? super T>> {
     protected BSTNode<T> root = null;
     public BST() {
     }
-    public void clear() {
+    public BST(BSTNode<T> root2) {
+	}
+	public void clear() {
         root = null;
     }
     public boolean isEmpty() {
