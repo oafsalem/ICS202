@@ -47,9 +47,9 @@ public class AVLTree<T extends Comparable<? super T>> extends BST {
     }
     
     public void delete(int e1) {
-    	//QUESTION 2
-    }
-
+            super.deleteByCopying(e1);  
+            this.balance();
+        }  
     protected void balance()
     {
         if(!isEmpty())
@@ -99,7 +99,7 @@ public class AVLTree<T extends Comparable<? super T>> extends BST {
           root.el = root.right.el;
           root.right.el = val;
             
-          getLeftAVL().adjustHeight();
+          getRightAVL().adjustHeight();
           adjustHeight();
 	}
     
@@ -125,9 +125,10 @@ public class AVLTree<T extends Comparable<? super T>> extends BST {
         System.out.println("LEFT RIGHT ROTATION");
         BSTNode tempNode = root.left;
         root.left = root.left.right;
-        root.left.left.left = tempNode;
-        rotateLeft();
-        
+        tempNode.right = root.left.left;
+        root.left.left = tempNode;
+        rotateRight();
+
     }
 
     protected void rotateRightLeft()
@@ -135,8 +136,9 @@ public class AVLTree<T extends Comparable<? super T>> extends BST {
         System.out.println("RIGHT LEFT ROTATION");
 		BSTNode tempNode = root.right;
         root.right = root.right.left;
-        root.right.right.right = tempNode;
-        rotateRight();
+        tempNode.left=root.right.right;
+        root.right.right = tempNode;
+        rotateLeft();
     }
     
 }
