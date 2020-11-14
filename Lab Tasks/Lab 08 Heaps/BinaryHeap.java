@@ -19,28 +19,50 @@ public class BinaryHeap
     	   
     	count = comparable.length;
     	
-    	//buildHeapTopDown(); PART OF Q. 1
-		buildHeapBottomUp();
+    	buildHeapTopDown();
+        //buildHeapBottomUp();
 	}
 	
 	private void buildHeapBottomUp()
 	{
-       //Q1
+	    for(int i = count/2; i>=1; i--) {
+            percolateDown(i);
+        }
 	}
 	
 	private void buildHeapTopDown()
 	{
-      //Q1
+        for (int i = 1; i < count; i++)
+        {
+            percolateUp(i);
+        }
 	}
 	
 	
 	private void percolateDown(int hole)
 	{
-		//Q1
-	}
+	    boolean done = false;
+        for (int i = hole; !done && (2*i <= count);){
+            i = 2*i;
+            if ((i+1<=count) && (array[i+1].compareTo(array[i])<0))
+            i++;
+            if (array[i/2].compareTo(array[i]) > 0){
+                Comparable tmp = array[i];
+                array[i] = array[i/2];
+                array[i/2] = tmp;
+            }
+            else
+                done = true;
+            }
+
+        }
 	
 	private void percolateUp(int hole){
-		//Q1
+        Comparable tmp = array[hole];
+        for(; hole > 1 && tmp.compareTo(array[hole/2]) < 0; hole  = hole/2)
+            array[hole] = array[hole/2];
+
+        array[hole] = tmp;
 	}
 	
 
@@ -110,6 +132,22 @@ public class BinaryHeap
     	BinaryHeap bh = new BinaryHeap(a);
     	//builds heap bottom up: change the constructor to build it top-down
     	System.out.println("\nThe heap is: "+bh);
-    	System.out.println("\nSorted Array is: "+Arrays.toString(bh.heapSort()));
+        System.out.println("\nSorted Array is: "+Arrays.toString(bh.heapSort()));
+        
+        Patient patients[] = new Patient[10];
+        for (int i =0; i <10; i++){
+            Patient x = new Patient();
+            x.name = String.format("x%d", i);
+            x.emergencyLevel = (int) (Math.random() *5);
+            patients[i] = x;
+        }
+        BinaryHeap bh2 = new BinaryHeap(patients);
+        for (int i =0; i <10; i++){
+            bh2.enqueue(patients[i]);
+        }
+        for (int i =0; i <10; i++){
+            System.out.println(bh2.dequeueMin());
+        }
+        
     }
 }
