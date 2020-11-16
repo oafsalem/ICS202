@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a7ca6778-e2ab-4642-8461-bcb96bfd8537" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Lab Tasks/Lab 07 AVL/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab Tasks/Lab 07 AVL/AVLTree.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1kKFYB09NHzxNkTeE3omFuMWnlQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\osama\IdeaProjects\ICS202\Programming Assignments\Assignment1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.s201814960_Q2">
+    <configuration name="s201814960_Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s201814960_Q1" />
+      <module name="Assignment1" />
+      <option name="PROGRAM_PARAMETERS" value="input.txt output.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="s201814960_Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s201814960_Q2" />
+      <module name="Assignment1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.s201814960_Q2" />
+        <item itemvalue="Application.s201814960_Q1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7ca6778-e2ab-4642-8461-bcb96bfd8537" name="Default Changelist" comment="" />
+      <created>1605441420508</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605441420508</updated>
+      <workItem from="1605441421601" duration="44000" />
+      <workItem from="1605449041865" duration="289000" />
+      <workItem from="1605537742560" duration="292000" />
+      <workItem from="1605538134837" duration="5071000" />
+      <workItem from="1605546800810" duration="35000" />
+      <workItem from="1605548259232" duration="177000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605544144415">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605544144415" />
+    <state x="776" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1605543591401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605543591401" />
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605537744652">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605537744652" />
+    <state x="260" y="240" key="FileChooserDialogImpl" timestamp="1605546705024">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="260" y="240" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605546705024" />
+    <state width="914" height="282" key="GridCell.Tab.0.bottom" timestamp="1605546713097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605546713097" />
+    <state width="914" height="282" key="GridCell.Tab.0.center" timestamp="1605546713097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605546713097" />
+    <state width="914" height="282" key="GridCell.Tab.0.left" timestamp="1605546713097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605546713097" />
+    <state width="914" height="282" key="GridCell.Tab.0.right" timestamp="1605546713097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605546713097" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1605441435793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605441435793" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605538226955">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605538226955" />
+  </component>
+</project>

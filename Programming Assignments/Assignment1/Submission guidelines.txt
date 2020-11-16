@@ -1,0 +1,24 @@
+Dear Students,
+
+
+As mentioned in the submission guidelines section of the assignment, all submissions MUST follow the rules mentioned there; otherwise, it will result in a Zero grade.
+
+Your submissions will go through a semi-automated grading process that will only accept submissions following the aforementioned rules.
+
+Below is a clarification for some of these rules.
+
+Any code that fails to compile and run will not be graded.
+You are advised to try all of your submissions against the sample test cases attached within the assignment folder while reading from these files and printing the output to other files. Then you may compare your output against the sample output files.
+The names of the input and output files shouldn’t be hard-coded in your code, therefore and before submitting your codes, you have to make sure that your programs program can run through cmd terminal and can receive the following arguments to the  “java” command:
+The input file name as the first argument (usually referenced to as args[0] in your code)
+The output file name as the second argument (usually referenced to as args[1] in your code)
+A simple java code (attached) demonstrates reading/writing from/to files through the command line argument. You may use some code snippets from there in your code.
+Here is a short article on how to pass arguments to a java program using the command line: https://www.javatpoint.com/command-line-argument
+Java Command Line Arguments - Javatpoint
+Java Command Line Arguments with examples, passed from the console and used in the java program as an input with examples on inheritance, polymorphism, abstraction, encapsulation, exception handling, multithreading, IO Streams, Networking, String, Regex, Collection, JDBC etc..
+www.javatpoint.com
+ 
+
+Regarding reading and writing to and from files:
+
+The grading process will include an exact match approach to validate your output files against the correct answer for each of the corresponding test cases, which means that any misrepresented output will not be considered as a valid answer. An extra white-space or a new line is considered a misrepresented format.
