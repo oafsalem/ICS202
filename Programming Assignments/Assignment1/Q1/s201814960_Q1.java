@@ -19,13 +19,12 @@ class s201814960_Q1 {
         Scanner scLine = new Scanner(sc.nextLine());
         while(scLine.hasNextInt()){
             int item = scLine.nextInt();
-            System.out.println(item);
+
             myList.addToTail(item);
         }
         int count = sc.nextInt();
         for (int i = 0; i < count; i++) {
             String s = sc.next();
-            System.out.println(s);
             switch (s) {
                 case "ia":
                     myList.insertAfter(sc.nextInt(), sc.nextInt());
@@ -273,15 +272,12 @@ class DLL<T> {
             if(head == null){
                 throw new RuntimeException("This DLL IS Empty");
             }
-            System.out.println(head.info);
         }
         else{
             DLLNode<T> tmp = tail;
             while (tmp.prev != null){
-                System.out.print(tmp.info + " ");
                 tmp = tmp.prev;
             }
-            System.out.println(this.head.info);
         }
     }
     public void delete7(){

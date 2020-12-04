@@ -46,7 +46,7 @@ public class AVLTree<T extends Comparable<? super T>> extends BST {
     	this.balance();
     }
     
-    public void delete(int e1) {
+    public void delete(T e1) {
             super.deleteByCopying(e1);  
             this.balance();
         }  
